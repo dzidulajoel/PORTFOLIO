@@ -2,6 +2,7 @@ import { FaBars } from "react-icons/fa"
 
 
 const Header = () => {
+
         return (
                 <div className="w-full h-full ">
                         <div className="w-full h-[10vh] flex">
@@ -20,9 +21,6 @@ const Header = () => {
                                         <h1 className=" ">DZIDULA</h1> 
                                         <FaBars className="max-sm:flex max-md:hidden max-lg:hidden max-xl:hidden max-2xl:hidden "/>
                                 </div>
-
-
-
                                 <div className="h-full w-full flex items-center 
                                 max-sm:hidden 
                                 max-md:flex max-md:w-[70%] 
@@ -31,11 +29,11 @@ const Header = () => {
                                 max-2xl:w-[60%] 
                                 ">
                                         <ul className="flex  text-secondary gap-8 font-display-text text-lg max-md:text-sm max-md:gap-4 max-lg:text-[16px]">
-                                                <li><a href="">Accueil</a></li>
-                                                <li><a href="">Competence</a></li>
-                                                <li><a href="">Services</a></li>
-                                                <li><a href="">Portfolio</a></li>
-                                                <li><a href="">Contact</a></li>
+                                                <li><a href="/#accueil">Accueil</a></li>
+                                                <li><a href="/#competence">Competence</a></li>
+                                                <li><a href="/#service">Services</a></li>
+                                                <li><a href="/#portfolio">Portfolio</a></li>
+                                                <li><a href="/#contact">Contact</a></li>
                                         </ul>
                                 </div>
 

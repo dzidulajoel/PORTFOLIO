@@ -1,52 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Monoton&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Secular+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Monoton&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Secular+One&display=swap");
 @import "tailwindcss";
 
-
-@theme{
-
-        --color-primary: #1E201E;
-        --color-tertiary: #FD8B51;
+@theme {
+        --color-primary: #1e201e;
+        --color-tertiary: #fd8b51;
         --color-secondary: #ffffff;
         --color-secondaryLight: #ecdfcc88;
-        --font-display-title: "Bowlby One SC","Secular One",serif;
-        --font-display-semiTitle: "Roboto", "Bowlby One SC","Secular One",serif;
-        --font-display-text: "Poppins","Munito","Roboto", "Bowlby One SC","Secular One",serif;
+        --font-display-title: "Bowlby One SC", "Secular One", serif;
+        --font-display-semiTitle: "Roboto", "Bowlby One SC", "Secular One", serif;
+        --font-display-text: "Poppins", "Munito", "Roboto", "Bowlby One SC",
+                "Secular One", serif;
         --font-display-design: "Monoton", serif;
-
 }
 
-.ombre{
-        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+html {
+        scroll-behavior: smooth;
 }
 
-.contour{
-        width: 55px;
-        height: 55px;
-        border-radius: 10px;
+.ombre {
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+                rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.contour {
+        width: 45px;
+        height: 45px;
         padding: 10px;
 }
 
-.input{
+a.active {
+        color: #fd8b51;
+}
+
+.input {
         width: 100%;
         outline: none;
         font-family: "Poppins";
+        border-bottom: #fd8b51 2px solid;
 }
 
-
-.btn{
+.btn {
         box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 }
 
-.btn:hover{
-        background-color: #FD8B51;
+.btn:hover {
+        background-color: #fd8b51;
         color: white;
         transition: background-color 0.4s ease;
         cursor: pointer;
         box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-
 }
 
-.submitBtn{
+.submitBtn {
         width: 100%;
         background-color: var(--color-secondary);
         padding: 10px 0;
@@ -54,10 +59,21 @@
         font-family: "Poppins";
 }
 
-.submitBtndes{
+.submitBtndes {
         width: 200px;
         background-color: var(--color-secondary);
         padding: 10px 0;
         color: var(--color-primary);
         font-family: "Poppins";
 }
+
+
+
+a:visited {
+        color: white;
+}
+
+a:hover {
+        color: #fd8b51;
+}
+

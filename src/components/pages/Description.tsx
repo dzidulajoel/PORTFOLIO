@@ -3,7 +3,7 @@ import {FaAngleDown, FaEnvelope, FaGithub, FaLinkedin} from 'react-icons/fa'
 const Description = () => {
         return (
                 <>
-                        <div className="text-secondary flex flex-col gap-5 justify-center" >
+                        <div id='accueil' className="text-secondary flex flex-col gap-5 justify-center" >
                                 <div className="flex flex-col gap-5 mt-30 max-sm:w-[90%] max-md:w-[100%] max-lg:px-5 ">
                                         <h1 className="font-display-title text-4xl text-tertiary">FREELANCE</h1>
                                         <h1 className="font-display-title text-4xl ">DZIDULA JOEL GAMATHO</h1>

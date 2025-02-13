@@ -4,7 +4,7 @@ import { FaMessage } from "react-icons/fa6"
 const Contact = () => {
         return (
                 <div>
-                        <div className='h-screen w-full py-8 max-sm:h-full max-md:h-full max-lg:h-full max-sm:pb-30 max-md:pb-20 max-lg:pb-20'>
+                        <div id='/contact' className='h-screen w-full pt-24 max-sm:h-full max-md:h-full max-lg:h-full max-sm:pb-30 max-md:pb-20 max-lg:pb-20'>
                                 <div className='text-secondary flex items-center gap-3 border-b-2 pb-2 border-secondary max-md:pt-15'>
                                         <FaHandshake className='text-2xl' />
                                         <h1 className='uppercase text-2xl font-bold text-gray-300 font-display-text'>Contact</h1>
@@ -29,7 +29,7 @@ const Contact = () => {
                                                         <button type="submit" className='submitBtn btn text-xl'>Envoyer</button>
                                                 </form>
                                                 <div>
-                                                        <ul className="flex justify-center items-center gap-10 mt-3 max-sm:gap-2 max-lg:gap-3">
+                                                        <ul className="flex justify-center items-center gap-10 mt-3 max-sm:gap-4 max-lg:gap-3">
                                                                 <li className="text-primary contour flex items-center justify-center btn bg-secondary "><a href=""><FaEnvelope /></a></li>
                                                                 <li className="text-primary contour flex items-center justify-center btn bg-secondary "><a href=""><FaGithub /></a></li>
                                                                 <li className="text-primary contour flex items-center justify-center btn bg-secondary "><a href=""><FaWhatsapp /></a></li>

@@ -4,7 +4,7 @@ import {FaGear } from 'react-icons/fa6'
 const Competences = () => {
         return (
                 <div className='h-screen py-8 max-sm:h-full max-md:h-full'>
-                        <div className='text-secondary flex items-center gap-3 border-b-2 pb-2 border-secondary'>
+                        <div id='/competence' className='text-secondary flex items-center gap-3 border-b-2 pb-2 border-secondary'>
                                 <FaGear className='text-2xl' />
                                 <h1 className='uppercase text-2xl font-bold text-gray-300 font-display-text'>Competences Techniques</h1>
                         </div>

@@ -1,10 +1,14 @@
 import { FaBrush, FaCalendar, FaCode } from "react-icons/fa";
 import { FaGauge } from "react-icons/fa6";
+import image from "./../../images/png.png"
+
+import data from "./../../api/bd.json"
 
 export default function Portfolio() {
+
         return (
                 <>
-                        <div className="h-screen bg-primary py-12 max-sm:h-full max-md:h-full  max-lg:h-full max-xl:pt-20">
+                        <div id='/portfolio' className="h-screen bg-primary py-12 max-sm:h-full max-md:h-full  max-lg:h-full max-xl:pt-20">
 
                                 <div className='text-secondary flex items-center gap-3 border-b-2 pb-2 border-secondary max-lg:pt-10 max-md:pt-10'>
                                         <FaBrush className='text-2xl' />
@@ -45,48 +49,21 @@ export default function Portfolio() {
 
 
                                 <div className='mt-8 flex flex-row flex-wrap gap-20 justify-between mb-8 max-sm:gap-10'>
-
-                                        <div className="w-3/12 h-[200px] flex flex-col gap-2 ombre max-sm:w-[70%] max-sm:mx-auto max-lg:w-[40%]">
-                                                        <a href="" className="w-full h-full">
-                                                                <img src="" alt="" />
-                                                        </a>
-                                                <p className="text-primary text-justify text-lg p-2 bg-secondary">MERN/ Tailwind Css/ SQL</p>
-                                        </div>
-
-                                        <div className="w-3/12 h-[200px] flex flex-col gap-2 ombre max-sm:w-[70%] max-sm:mx-auto max-lg:w-[40%]">
-                                                        <a href="" className="w-full h-full">
-                                                                <img src="" alt="" />
-                                                        </a>
-                                                <p className="text-primary text-justify text-lg p-2 bg-secondary">MERN/ Tailwind Css/ SQL</p>
-                                        </div>
-
-                                        <div className="w-3/12 h-[200px] flex flex-col gap-2 ombre max-sm:w-[70%] max-sm:mx-auto max-lg:w-[40%]">
-                                                        <a href="" className="w-full h-full">
-                                                                <img src="" alt="" />
-                                                        </a>
-                                                <p className="text-primary text-justify text-lg p-2 bg-secondary">MERN/ Tailwind Css/ SQL</p>
-                                        </div>
-
-                                        <div className="w-3/12 h-[200px] flex flex-col gap-2 ombre max-sm:w-[70%] max-sm:mx-auto max-lg:w-[40%]">
-                                                        <a href="" className="w-full h-full">
-                                                                <img src="" alt="" />
-                                                        </a>
-                                                <p className="text-primary text-justify text-lg p-2 bg-secondary">MERN/ Tailwind Css/ SQL</p>
-                                        </div>
-
-                                        <div className="w-3/12 h-[200px] flex flex-col gap-2 ombre max-sm:w-[70%] max-sm:mx-auto max-lg:w-[40%]">
-                                                        <a href="" className="w-full h-full">
-                                                                <img src="" alt="" />
-                                                        </a>
-                                                <p className="text-primary text-justify text-lg p-2 bg-secondary">MERN/ Tailwind Css/ SQL</p>
-                                        </div>
-
-                                        <div className="w-3/12 h-[200px] flex flex-col gap-2 ombre max-sm:w-[70%] max-sm:mx-auto max-lg:w-[40%]">
-                                                        <a href="" className="w-full h-full">
-                                                                <img src="" alt="" />
-                                                        </a>
-                                                <p className="text-primary text-justify text-lg p-2 bg-secondary">MERN/ Tailwind Css/ SQL</p>
-                                        </div>
+                                        {
+                                                data.projet.map((items) => {
+                                                        return (
+                                                                        <div key={items.id} className="w-3/12 h-[200px] flex flex-col gap-2 ombre max-sm:w-[70%] max-sm:mx-auto max-lg:w-[40%]">
+                                                                                <a href="https://joelportfolio-3qwo.onrender.com/" target="parent" className="w-full h-full">
+                                                                                        <img 
+                                                                                                style={{ objectFit: "cover", objectPosition: "center", width: "100%", height: "100%" }} 
+                                                                                                src={image} 
+                                                                                                alt="projet" />
+                                                                                </a>
+                                                                                <p className="text-primary text-justify text-lg p-2 bg-secondary" >{items.infos}</p>
+                                                                        </div>
+                                                        )
+                                                })
+                                        }
                                 </div>
                         </div>
                 </>
