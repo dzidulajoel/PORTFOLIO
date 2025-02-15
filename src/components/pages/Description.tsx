@@ -4,7 +4,7 @@ const Description = () => {
         return (
                 <>
                         <div id='accueil' className="text-secondary flex flex-col gap-5 justify-center" >
-                                <div className="flex flex-col gap-5 mt-30 max-sm:w-[90%] max-md:w-[100%] max-lg:px-5 ">
+                                <div className="flex flex-col gap-5 mt-30 max-sm:mt-10 max-sm:w-[90%] max-md:w-[100%] max-lg:px-5 ">
                                         <h1 className="font-display-title text-4xl text-tertiary">FREELANCE</h1>
                                         <h1 className="font-display-title text-4xl ">DZIDULA JOEL GAMATHO</h1>
                                         <h1 className="font-display-semiTitle uppercase text-3xl text-tertiary">Developpeur FullStack Javascript</h1>
@@ -27,14 +27,14 @@ const Description = () => {
                                         </div>
                                 </div>
 
-                                <div className="flex gap-10 mt-10  h-[40px] max-sm:w-[90%] max-md:w-[100%] max-lg:px-5 max-lg:justify-center">
-                                        <button className='submitBtndes btn'>Telecharger mon CV</button>
-                                        <button className='submitBtndes btn'>Telecharger mon CV</button>
+                                <div className="flex gap-10 mt-10  h-[40px] max-sm:w-[90%]  max-sm:mt-10 max-md:w-[100%] max-lg:px-5 max-lg:justify-center">
+                                        <button className='submitBtndes btn btnHeader'>Telecharger mon CV</button>
+                                        <button className='submitBtndes btn btnHeader'><a href="/#contact">Callaborer</a></button>
 
                                 </div>
 
                                 <div className='w-full flex justify-center items-center mt-15 mb-20' >
-                                        <button className='h-[40px] w-[90px] justify-center items-center flex '><a href=""><FaAngleDown className='text-4xl text-secondary'/></a></button>
+                                        <button className='h-[40px] w-[90px] justify-center items-center flex '><a href="/#competence"><FaAngleDown className='text-4xl text-secondary'/></a></button>
                                 </div>
                         </div>
                 </>

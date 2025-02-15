@@ -39,9 +39,7 @@ a.active {
         border-bottom: #fd8b51 2px solid;
 }
 
-.btn {
-        box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-}
+
 
 .btn:hover {
         background-color: #fd8b51;
@@ -60,7 +58,7 @@ a.active {
 }
 
 .submitBtndes {
-        width: 200px;
+        width: 150px;
         background-color: var(--color-secondary);
         padding: 10px 0;
         color: var(--color-primary);
@@ -68,12 +66,23 @@ a.active {
 }
 
 
-
-a:visited {
-        color: white;
-}
-
-a:hover {
+.headerAhref:hover {
         color: #fd8b51;
 }
 
+.sociaux{
+        color: black;
+        font-weight: bold;
+}
+
+.btnContact{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.btnHeader{
+        width: 180px;
+}

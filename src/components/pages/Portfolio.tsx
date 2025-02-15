@@ -8,7 +8,7 @@ export default function Portfolio() {
 
         return (
                 <>
-                        <div id='/portfolio' className="h-screen bg-primary py-12 max-sm:h-full max-md:h-full  max-lg:h-full max-xl:pt-20">
+                        <div id='/portfolio' className="h-screen bg-primary py-12 max-sm:py-4 max-sm:h-full max-md:h-full  max-lg:h-full max-xl:pt-20">
 
                                 <div className='text-secondary flex items-center gap-3 border-b-2 pb-2 border-secondary max-lg:pt-10 max-md:pt-10'>
                                         <FaBrush className='text-2xl' />
